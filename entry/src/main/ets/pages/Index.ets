@@ -14,8 +14,8 @@ struct ChatCompletionPage {
   openaiClient: OpenAI = new OpenAI(
     "ollama",//api-key
     undefined,
-    // "http://localhost:11434/v1" //ip+:11434/v1
-    "http://localhost:11434/v1"
+    "http://localhost:11434/v1" //ip+:11434/v1
+    // "http://192.168.207.1:11434/v1"
   )
   messages: IChatCompletionMessageParam[] = [new ChatCompletionSystemMessageParam("You are a helpful assistant.")]
 
